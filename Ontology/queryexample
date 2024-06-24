@@ -5,10 +5,8 @@ PREFIX kebi: <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#>
 
 select  ?meal 
 Where  {?meal rdf:type kebi:Meal.
-	?meal kebi:foo_type ?type.
-     Filter(?type="carnivorous")
+	?meal kebi:meal_hasCategory kebi:category_carnivorous
 }
-
 
 //get all the ingredients of the carnivorous meal
 PREFIX : <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/>
@@ -20,10 +18,8 @@ PREFIX kebi: <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#>
 construct { ?ingredient a :ingredient_type_carnivorous }
 Where  {?ingredient rdf:type kebi:Ingredients.
 		?meal kebi:composedBy ?ingredient.
-	?meal kebi:foo_type ?type.
-     Filter(?type="carnivorous")
+	?meal kebi:meal_hasCategory kebi:category_carnivorous
 }
-   
 
 //get all dishes composedBy parmesan
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -43,23 +39,30 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX kebi: <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#>
 
-select  ?meal ?allergies
+select  ?meal
 Where  {
     ?meal rdf:type kebi:Meal.
-   ?meal kebi:food_allergies ?allergies
-    filter(?allergies="gluten_free")
+    filter not EXISTS{
+        ?meal kebi:meal_containsGluten kebi:allergy_gluten
+    }
 }
 
 //get dished paying attenction on the calories 
+PREFIX : <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/>
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX kebi: <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#>
 
+
 select  ?meal
 Where  {
     ?meal rdf:type kebi:Meal.
-   ?meal kebi:food_calories ?calories
-    filter(?calories=1)
+    ?meal kebi:food_calories ?calories
+	FILTER NOT EXISTS {
+        ?meal kebi:meal_containsLactose kebi:allergy_lactose
+    }
+    FILTER(?calories=2)
 }
 
 //get the menu medium kcal glutern and lactose free
@@ -72,6 +75,11 @@ select  ?meal
 Where  {
     ?meal rdf:type kebi:Meal.
    ?meal kebi:food_calories ?calories.
-    ?meal kebi:food_allergies ?allergies.
-    filter(?calories=1 && ?allergies="gluten_free")
+    filter not EXISTS{
+        ?meal kebi:meal_containsLactose kebi:allergy_lactose.
+    }
+    filter not EXISTS{
+        ?meal kebi:meal_containsGluten kebi:allergy_gluten.
+    }
+    filter(?calories=1)
 }

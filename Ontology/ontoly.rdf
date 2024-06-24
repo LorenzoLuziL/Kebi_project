@@ -32,6 +32,51 @@
     
 
 
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#meal_containsGluten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#meal_containsGluten">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Gluten"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#meal_containsLactose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#meal_containsLactose">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Lactose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#meal_hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#meal_hasCategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#menu_hasMeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#menu_hasMeal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#restaurant_hasMenu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#restaurant_hasMenu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Menu"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -43,64 +88,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#foo_type -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#foo_type">
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>Carnivorous</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>Fish</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>Vegetarian</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#food_allergies -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#food_allergies">
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>gluten_free</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>lactose_free</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#food_calories -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#food_calories">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Food"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#thins_hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#thins_hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -116,9 +118,45 @@
     
 
 
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Allergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Allergy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Carnivorous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Carnivorous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Fish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Food -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Gluten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Gluten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Allergy"/>
+    </owl:Class>
     
 
 
@@ -130,10 +168,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Lactose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Lactose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Allergy"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Menu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Menu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Vegetarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Vegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category"/>
     </owl:Class>
     
 
@@ -149,10 +215,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Gluten"/>
+        <kebiOntology:thins_hasName>Gluten</kebiOntology:thins_hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Lactose"/>
+        <kebiOntology:thins_hasName>Lactose</kebiOntology:thins_hasName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#basil -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#basil">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Basil</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -161,6 +246,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#bechamel">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Bechamel</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -169,6 +255,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#bread_crumbs">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Bread_crumbs</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -177,6 +264,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#butter">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Butter</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -185,6 +273,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#caffe">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Caffe</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -193,6 +282,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#calamari">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Calamari</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -205,9 +295,38 @@
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#guanciale"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#parmesan"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#pasta"/>
-        <kebiOntology:foo_type>carnivorous</kebiOntology:foo_type>
-        <kebiOntology:food_allergies></kebiOntology:food_allergies>
+        <kebiOntology:meal_containsGluten rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten"/>
+        <kebiOntology:meal_containsLactose rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Carbonara</kebiOntology:thins_hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Carnivorous"/>
+        <kebiOntology:thins_hasName>Carnivorous</kebiOntology:thins_hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Fish"/>
+        <kebiOntology:thins_hasName>Fish</kebiOntology:thins_hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_vegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_vegetarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Vegetarian"/>
+        <kebiOntology:thins_hasName>Vegetarian</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -216,6 +335,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#clam">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Clam</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -224,6 +344,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#cocoa">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Cocoa</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -232,6 +353,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#eggs">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Eggs</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -240,6 +362,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#flour">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Flour</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -248,6 +371,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#garlic">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Garlic</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -256,6 +380,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#guanciale">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Guanciale</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -270,9 +395,11 @@
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#ragu"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#salt"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tomato"/>
-        <kebiOntology:foo_type>carnivorous</kebiOntology:foo_type>
-        <kebiOntology:food_allergies></kebiOntology:food_allergies>
+        <kebiOntology:meal_containsGluten rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten"/>
+        <kebiOntology:meal_containsLactose rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Lasagna</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -281,6 +408,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#lettuce">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Lettuce</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -289,6 +417,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mascarpone">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Mascarpone</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -297,6 +426,24 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#melanzane">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Melanzane</kebiOntology:thins_hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#menu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#menu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Menu"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#carbonara"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#lasagna"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#parmigiana"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#pizza_margherita"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#salad"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#spaghetti_allo_scoglio"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tagliatelle_fritte"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tiramisu"/>
+        <kebiOntology:menu_hasMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tortellini"/>
     </owl:NamedIndividual>
     
 
@@ -305,6 +452,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#minced_meat">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Minced_meat</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -313,6 +461,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mozzarella">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Mozzarella</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -321,6 +470,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mussel">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Mussel</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -329,6 +479,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#olive_oil">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Olive_oil</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -337,6 +488,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#onion">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Onion</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -345,6 +497,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#parmesan">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Parmesan</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -361,9 +514,11 @@
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#onion"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#parmesan"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#salt"/>
-        <kebiOntology:foo_type>vegetarian</kebiOntology:foo_type>
-        <kebiOntology:food_allergies></kebiOntology:food_allergies>
+        <kebiOntology:meal_containsGluten rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten"/>
+        <kebiOntology:meal_containsLactose rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_vegetarian"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Parmigiana</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -372,6 +527,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#parsely">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Parsely</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -380,6 +536,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#pasta">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Pasta</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -388,6 +545,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#pepper">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Pepper</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -398,10 +556,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mozzarella"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tomato"/>
-        <kebiOntology:foo_type>vegetarian</kebiOntology:foo_type>
-        <kebiOntology:food_allergies></kebiOntology:food_allergies>
+        <kebiOntology:meal_containsGluten rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten"/>
+        <kebiOntology:meal_containsLactose rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_fish"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_vegetarian"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Pizza_margherita</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -410,6 +572,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#ragu">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Ragu</kebiOntology:thins_hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#restaurant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#restaurant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Restaurant"/>
+        <kebiOntology:restaurant_hasMenu rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#menu"/>
+        <kebiOntology:thins_hasName>Kebi Restaurant</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -422,12 +595,11 @@
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#olive_oil"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#salt"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tomato"/>
-        <kebiOntology:foo_type>vegetarian</kebiOntology:foo_type>
-        <kebiOntology:food_allergies>gluten_free</kebiOntology:food_allergies>
-        <kebiOntology:food_allergies>lactose_free</kebiOntology:food_allergies>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_vegetarian"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</kebiOntology:food_calories>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Salad</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -436,6 +608,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#salt">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Salt</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -444,6 +617,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#savoiardi">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Savoiardi</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -452,6 +626,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#scampi">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Scampi</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -466,11 +641,12 @@
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#olive_oil"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#scampi"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#wine"/>
-        <kebiOntology:foo_type>carnivorous</kebiOntology:foo_type>
-        <kebiOntology:foo_type>fish</kebiOntology:foo_type>
-        <kebiOntology:food_allergies>lactose_free</kebiOntology:food_allergies>
+        <kebiOntology:meal_containsGluten rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_fish"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Spaghetti_allo_scoglio</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -479,6 +655,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#sugar">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Sugar</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -492,9 +669,11 @@
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#pasta"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#ragu"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#salt"/>
-        <kebiOntology:foo_type>carnivorous</kebiOntology:foo_type>
-        <kebiOntology:food_allergies></kebiOntology:food_allergies>
+        <kebiOntology:meal_containsGluten rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten"/>
+        <kebiOntology:meal_containsLactose rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Tagliatelle_fritte</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -507,11 +686,12 @@
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#cocoa"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mascarpone"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#savoiardi"/>
-        <kebiOntology:foo_type>carnivorous</kebiOntology:foo_type>
-        <kebiOntology:foo_type>fish</kebiOntology:foo_type>
-        <kebiOntology:foo_type>vegetarian</kebiOntology:foo_type>
-        <kebiOntology:food_allergies>gluten_free</kebiOntology:food_allergies>
+        <kebiOntology:meal_containsLactose rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_lactose"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_fish"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_vegetarian"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Tiramisu</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -520,6 +700,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tomato">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Tomato</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -530,10 +711,11 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#minced_meat"/>
         <kebiOntology:composedBy rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#pasta"/>
-        <kebiOntology:foo_type>carnivorous</kebiOntology:foo_type>
-        <kebiOntology:food_allergies>lactose_free</kebiOntology:food_allergies>
+        <kebiOntology:meal_containsGluten rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#allergy_gluten"/>
+        <kebiOntology:meal_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#category_carnivorous"/>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kebiOntology:food_calories>
         <kebiOntology:food_calories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</kebiOntology:food_calories>
+        <kebiOntology:thins_hasName>Tortellini</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
 
@@ -542,6 +724,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#wine">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:thins_hasName>Wine</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
 </rdf:RDF>
 
