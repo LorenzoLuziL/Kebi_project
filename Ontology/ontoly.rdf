@@ -6,9 +6,29 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:kebiOntology="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#"
      xmlns:untitled-ontology-14="http://www.semanticweb.org/lauz/ontologies/2024/5/untitled-ontology-14#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -20,6 +40,33 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Carnivorous -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Carnivorous">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Seasoning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Seasoning">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Seasoning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Vegetarian -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Vegetarian">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Category"/>
+    </owl:ObjectProperty>
     
 
 
@@ -93,6 +140,33 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#food_calories">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Food"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isCarnivorous -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isCarnivorous">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isSeasoning -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isSeasoning">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isVegetarian -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isVegetarian">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -196,6 +270,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Seasoning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Seasoning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Vegetarian -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Vegetarian">
@@ -237,6 +319,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#basil">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
+        <kebiOntology:isVegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isVegetarian>
         <kebiOntology:thins_hasName>Basil</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -246,6 +330,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#bechamel">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Bechamel</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -255,6 +340,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#bread_crumbs">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Bread_crumbs</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -264,6 +350,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#butter">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Butter</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -273,6 +360,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#caffe">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Caffe</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -282,6 +370,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#calamari">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isCarnivorous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isCarnivorous>
         <kebiOntology:thins_hasName>Calamari</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -335,6 +424,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#clam">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isCarnivorous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isCarnivorous>
         <kebiOntology:thins_hasName>Clam</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -344,6 +434,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#cocoa">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Cocoa</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -353,6 +444,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#eggs">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Eggs</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -362,6 +454,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#flour">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Flour</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -371,6 +464,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#garlic">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Garlic</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -380,6 +474,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#guanciale">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isCarnivorous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isCarnivorous>
         <kebiOntology:thins_hasName>Guanciale</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -408,6 +503,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#lettuce">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isVegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isVegetarian>
         <kebiOntology:thins_hasName>Lettuce</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -417,6 +513,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mascarpone">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Mascarpone</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -426,6 +523,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#melanzane">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isVegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isVegetarian>
         <kebiOntology:thins_hasName>Melanzane</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -452,6 +550,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#minced_meat">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isCarnivorous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isCarnivorous>
         <kebiOntology:thins_hasName>Minced_meat</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -461,6 +560,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mozzarella">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Mozzarella</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -470,6 +570,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#mussel">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isCarnivorous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isCarnivorous>
         <kebiOntology:thins_hasName>Mussel</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -479,6 +580,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#olive_oil">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Olive_oil</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -488,6 +590,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#onion">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isVegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isVegetarian>
         <kebiOntology:thins_hasName>Onion</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -497,6 +600,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#parmesan">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Parmesan</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -527,6 +631,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#parsely">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Parsely</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -545,6 +650,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#pepper">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Pepper</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -572,6 +678,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#ragu">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isCarnivorous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isCarnivorous>
         <kebiOntology:thins_hasName>Ragu</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -608,6 +715,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#salt">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Salt</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -617,6 +725,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#savoiardi">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Savoiardi</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -626,6 +735,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#scampi">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isCarnivorous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isCarnivorous>
         <kebiOntology:thins_hasName>Scampi</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -655,6 +765,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#sugar">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Sugar</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -700,6 +811,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#tomato">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isVegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isVegetarian>
         <kebiOntology:thins_hasName>Tomato</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
     
@@ -724,8 +836,168 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#wine">
         <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+        <kebiOntology:isSeasoning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</kebiOntology:isSeasoning>
         <kebiOntology:thins_hasName>Wine</kebiOntology:thins_hasName>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/meal">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#composedBy"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/meal"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isCarnivorous"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Carnivorous"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Meal"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#composedBy"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/meal"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredients"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#isSeasoning"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#Ingredient_Seasoning"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology/ingre"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 

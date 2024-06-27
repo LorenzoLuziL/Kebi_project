@@ -83,3 +83,15 @@ Where  {
     }
     filter(?calories=1)
 }
+
+// Query done in protégé utilizing the SWRL rule applied by the Reasoner 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX kebi: <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#>
+
+SELECT distinct ?ingredient 
+WHERE {
+  ?ingredient rdf:type kebi:Ingredients .
+  ?ingredient kebi:Ingredient_Seasoning ?value.
+}
+
