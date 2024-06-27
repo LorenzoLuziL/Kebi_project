@@ -1,0 +1,131 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSczhema#> .
+@prefix ex: <http://www.example.org/ontology#> .
+@prefix kebi: <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+kebi:RestaurantShape a sh:NodeShape ;
+    sh:targetClass kebi:Restaurant ;
+    sh:property [
+        sh:path kebi:restaurant_hasMenu ;
+        sh:node kebi:MenuShape ;
+        sh:minCount 1 ;
+        sh:maxCount 10 ;
+        sh:message "No menu founded" ;
+    ] ;
+.
+
+kebi:MenuShape a sh:NodeShape;
+	sh:targetClass kebi:Menu;
+	sh:property[
+		sh:path kebi:menu_hasMeal;
+		sh:minCount 1;
+		sh:maxCount 100;
+		sh:message "there is a error with the menu";	
+];
+.
+kebi:IngredientsShape a sh:NodeShape;
+	sh:targetCalss kebi:Ingredients;
+	sh:property[
+		sh:path kebi:isCarnivorous;
+		sh:minCount 0;
+		sh:maxCount 1;
+		sh:message "It can only have on property isCarnivorous";
+	];
+	sh:property[
+		sh:path kebi:isVegetarian;
+		sh:minCount 0;
+		sh:maxCount 1;
+		sh:message "It can only have on property isVegetarian";
+	];
+	sh:property[
+		sh:path kebi:isSeasoning;
+		sh:minCount 0;
+		sh:maxCount 1;
+		sh:message "It can only have on property isSeasoning";
+	];
+.
+kebi:MealShape a sh:NodeShape;
+	sh:targetClass kebi:Meal;
+	sh:property[
+		sh:path kebi:meal_hasCategory;
+		sh:node kebi:CarnivorousShape;
+		sh:minCount 1;
+		sh:message "there is no carnivorous dish";
+];
+	sh:property[
+		sh:path kebi:meal_hasCategory;
+		sh:node kebi:Vegetarian;
+		sh:minCount 1;
+		sh:message "there is no vegetarian dish";
+];	
+	sh:property[
+		sh:path kebi:meal_hasCategory;
+		sh:node kebi:Fish;
+		sh:minCount 1;
+		sh:message "there is no fish dish";
+];	
+	sh:property[
+		sh:path kebi:thins_hasName;
+		sh:dataType xsd:string;
+		sh:minCount 1;
+		sh:message "It must have a name";
+];
+.
+
+kebi:GlutenShape a sh:NodeShape;
+	sh:targetClass kebi:Gluten;
+.
+kebi:MenuShape a sh:NodeShape;
+	sh:targetClass kebi:Menu;
+.
+kebi:LactoseShape a sh:NodeShape;
+	sh:targetClass kebi:Lactose;
+.
+kebi:CarnivorousShape a sh:NodeShape;
+	sh:targetClass kebi:Carnivorous;
+.
+kebi:FishShape a sh:NodeShape;
+	sh:targetClass kebi:Fish;
+.
+kebi:VegetarianShape a sh:NodeShape;
+	sh:targetClass kebi:Vegetarian;
+.
+kebi:IngredientsShape a sh:NodeShape;
+	sh:targetClass kebi:Ingredients;
+.
+kebi:Carnivorous_ingredientsShape a sh:NodeShape;
+	sh:targetClass kebi:Carnivorous_ingredients;
+.
+kebi:Vegetarian_ingredient a sh:NodeShape;
+	sh:targetClass kebi:Vegetarian_ingredient;
+.
+kebi:SeasoningShape a sh:NodeShape;
+	sh:targetClass kebi:Seasoning;
+.
+kebi:MealShape a sh:NodeShape;
+	sh:targetClass kebi:Meal;
+.
+kebi:RestaurantShape sh:targetClass kebi:Restaurant.
+
+kebi:MenuShape sh:targetClass kebi:Menu.
+
+kebi:LactoseShape sh:targetClass kebi:Lactose.
+
+kebi:CarnivorousShape sh:targetClass kebi:Carnivorous.
+
+kebi:VegetarianShape sh:targetClass kebi:Vegetarian.
+
+kebi:FishShape sh:targetClass kebi:Fish.
+
+kebi:GlutenShape sh:targetCalss kebi:Gluten.
+
+kebi:IngredientsSHape sh:targetClass kebi:Ingredients.
+
+kebi:Carnivorous_ingredientsShape sh:targetClass kebi:Carnivorous_ingredients.
+
+kebi:Vegetarian_ingredientShape sh:targetClass kebi:Vegetarian_ingredient.
+
+kebi:SeasoningShape sh:targetClass kebi:Sesasoning.
+
+kebi:MealShape sh:targetClass kebi:Meal.
