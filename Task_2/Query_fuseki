@@ -1,0 +1,40 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX bpaas: <http://ikm-group.ch/archimeo/bpaas#>
+PREFIX bpmn: <http://ikm-group.ch/archiMEO/BPMN#>
+PREFIX mod: <http://fhnw.ch/modelingEnvironment/ModelOntology#>
+PREFIX lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#>
+PREFIX kebi: <http://www.semanticweb.org/lauz/ontologies/2024/kebiOntology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?dish ?category ?allergy ?calories  
+WHERE { 
+  OPTIONAL {
+    mod:food_category_e1d22f5b-66be-4d86-b1cf-cdcc1651a187 lo:choose_food_category ?category . 
+    BIND(IF(?category = "carnivorous", kebi:category_carnivorous, 
+             IF(?category = "vegetarian", kebi:category_vegetarian,
+                IF(?category = "fish", kebi:category_fish, ?category))) AS ?finalCategory) .
+  }
+
+  OPTIONAL {
+    mod:allergies_selection_b3f2256d-1962-459a-9668-c81b93b8867d lo:food_allergies ?allergy . 
+    BIND(IF(?allergy = "lactose", kebi:allergy_lactose, 
+             IF(?allergy = "gluten", kebi:allergy_gluten, ?allergy)) AS ?all) . 
+  }
+
+  mod:choose_food_calories_997ba144-c848-4c17-878e-ed5a2bec0e2e lo:calories ?calories .
+
+  ?dish a kebi:Meal . 
+
+  OPTIONAL {
+    ?dish kebi:meal_hasCategory ?finalCategory .
+  }
+  
+  OPTIONAL {
+    ?dish kebi:meal_containsLactose ?all . 
+    FILTER (?allergy = "")
+  }
+
+  ?dish kebi:food_calories ?kcal.
+  FILTER (?kcal = ?calories)
+}

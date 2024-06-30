@@ -410,7 +410,7 @@ kebiOntology:sugar  a               kebiOntology:Ingredients , owl:NamedIndividu
 mod:Model_ed7166c3-6776-4ec9-91a5-d7ff62475a92
         a                  mod:Model ;
         rdfs:label         "Restaurant Process" ;
-        mod:modelHasShape  mod:Pool_Shape_c5cd0fad-e8af-fc45-e05b-d6655505b750 , mod:Lane_Shape_26d2380f-8a80-03ca-41f3-da1309fa4ada , mod:Lane_Shape_d921e049-bc10-5101-1bef-7510caabf0d1 , mod:StartEvent_Shape_d03c7081-4d0d-8e5e-015e-8cf3d3534512 , mod:ExclusiveGateway_Shape_27cba38b-1f4e-a91b-0c07-d9a679c933ad , mod:Subprocess_Shape_36a09cc5-8800-6ae5-53f6-910372624baf , mod:Task_Shape_390fdb07-a001-ffea-23ec-732820aa0474 , mod:SequenceFlow_BPMN_Shape_53bb79f2-de0f-31a8-4106-fdf9eec09374 , mod:ExclusiveGateway_Shape_651d93d1-fdf5-d89e-00bd-860e2215581b , mod:SequenceFlow_BPMN_Shape_36f7ccfb-bb35-77a1-97e5-e0d20d4ee346 , mod:SequenceFlow_BPMN_Shape_6dce804a-640b-58cc-d621-572705c2cbf9 , mod:SequenceFlow_BPMN_Shape_570b0b9f-06ba-d789-a29a-779c781a6ba0 , mod:Task_Shape_08cb5275-0bb0-9fcb-08dd-a7b6e3e4b4cb , mod:Subprocess_Shape_b034c367-3cda-7b21-5cce-da8b3063d73d , mod:SequenceFlow_BPMN_Shape_52dbff65-678f-03f2-92e8-6a92785731ed , mod:SequenceFlow_BPMN_Shape_d6749a0c-6c4d-a1f9-73ce-5048834e0595 , mod:SequenceFlow_BPMN_Shape_a7555ef4-a483-b4e5-917d-8556e49259a9 , mod:Task_Shape_247ab942-a4c8-efea-0f38-715ff8b6d96c , mod:ExclusiveGateway_Shape_67f7d3bf-0ae7-920e-f78e-44c2ceb81b30 , mod:SequenceFlow_BPMN_Shape_6215d5c5-443b-6809-657d-40c97a4edec3 , mod:DataStore_Shape_b6a627e6-32f6-49e4-3411-143dd146f70e , mod:Subprocess_Shape_430b43a7-bb5c-e259-8a30-ab9a82ff15a8 , mod:Task_Shape_62be6f85-f9c8-337c-b169-d2d01a905797 , mod:Task_Shape_2c87de68-3e2c-8998-3b5d-beac57bf9f60 , mod:EndEvent_Shape_32b460c6-1e68-1775-4480-4ac43c047410 , mod:SequenceFlow_BPMN_Shape_4e5b32c2-9f88-12e7-eb66-0fb02476067b , mod:SequenceFlow_BPMN_Shape_cbd5dfe8-297a-2d64-1a10-1c17cb17e958 , mod:SequenceFlow_BPMN_Shape_c1ef5da4-7772-1113-912d-d5a334dfba5f , mod:SequenceFlow_BPMN_Shape_1ed03c7c-b916-4652-409b-9c3312568a28 , mod:SequenceFlow_BPMN_Shape_0697ee5a-f3c4-963d-e5ba-294c123ee2c8 , mod:SequenceFlow_BPMN_Shape_073b7871-cc29-c7e6-f431-67cd05dc7fe9 , mod:Association_BPMN_Shape_b94b3db2-aa1f-0f8e-03ef-cfb013f4c08f , mod:Task_Shape_a18ca7d6-f1ea-4fde-7e8d-e595657c3b2b , mod:Task_Shape_2d132b79-7493-d172-bd67-5f6f77fcfe10 , mod:Task_Shape_0c0062af-ed77-b91c-f3c0-9e246308bef1 , mod:SequenceFlow_BPMN_Shape_2390ecf0-38be-2c79-ec1d-d8f84ca196c5 , mod:SequenceFlow_BPMN_Shape_cb0a3d5d-494a-1ce1-a0cf-20bb6a4241b6 , mod:MessageFlow_BPMN_Shape_927d2b4f-8e95-07a2-03d6-0b296df2506f , mod:SequenceFlow_BPMN_Shape_ecc6d95b-3b36-2e1b-491a-f8fe36fcefce , mod:SequenceFlow_BPMN_Shape_1e9fede7-49ff-4f93-3f7c-7ee6de85f631 .
+        mod:modelHasShape  mod:Pool_Shape_c5cd0fad-e8af-fc45-e05b-d6655505b750 , mod:Lane_Shape_26d2380f-8a80-03ca-41f3-da1309fa4ada , mod:Lane_Shape_d921e049-bc10-5101-1bef-7510caabf0d1 , mod:StartEvent_Shape_d03c7081-4d0d-8e5e-015e-8cf3d3534512 , mod:ExclusiveGateway_Shape_27cba38b-1f4e-a91b-0c07-d9a679c933ad , mod:Subprocess_Shape_36a09cc5-8800-6ae5-53f6-910372624baf , mod:ExclusiveGateway_Shape_651d93d1-fdf5-d89e-00bd-860e2215581b , mod:SequenceFlow_BPMN_Shape_6dce804a-640b-58cc-d621-572705c2cbf9 , mod:Subprocess_Shape_b034c367-3cda-7b21-5cce-da8b3063d73d , mod:SequenceFlow_BPMN_Shape_52dbff65-678f-03f2-92e8-6a92785731ed , mod:Task_Shape_247ab942-a4c8-efea-0f38-715ff8b6d96c , mod:ExclusiveGateway_Shape_67f7d3bf-0ae7-920e-f78e-44c2ceb81b30 , mod:DataStore_Shape_b6a627e6-32f6-49e4-3411-143dd146f70e , mod:Subprocess_Shape_430b43a7-bb5c-e259-8a30-ab9a82ff15a8 , mod:Task_Shape_62be6f85-f9c8-337c-b169-d2d01a905797 , mod:Task_Shape_2c87de68-3e2c-8998-3b5d-beac57bf9f60 , mod:EndEvent_Shape_32b460c6-1e68-1775-4480-4ac43c047410 , mod:SequenceFlow_BPMN_Shape_4e5b32c2-9f88-12e7-eb66-0fb02476067b , mod:SequenceFlow_BPMN_Shape_cbd5dfe8-297a-2d64-1a10-1c17cb17e958 , mod:SequenceFlow_BPMN_Shape_c1ef5da4-7772-1113-912d-d5a334dfba5f , mod:SequenceFlow_BPMN_Shape_1ed03c7c-b916-4652-409b-9c3312568a28 , mod:SequenceFlow_BPMN_Shape_0697ee5a-f3c4-963d-e5ba-294c123ee2c8 , mod:SequenceFlow_BPMN_Shape_073b7871-cc29-c7e6-f431-67cd05dc7fe9 , mod:Association_BPMN_Shape_b94b3db2-aa1f-0f8e-03ef-cfb013f4c08f , mod:Task_Shape_a18ca7d6-f1ea-4fde-7e8d-e595657c3b2b , mod:Task_Shape_2d132b79-7493-d172-bd67-5f6f77fcfe10 , mod:SequenceFlow_BPMN_Shape_ecc6d95b-3b36-2e1b-491a-f8fe36fcefce , mod:SequenceFlow_BPMN_Shape_1e9fede7-49ff-4f93-3f7c-7ee6de85f631 , mod:f231720a-8220-00ac-45d2-593ec07ca518_Shape_ac8521b5-d96d-4803-8df2-e0c0468c119d , mod:0a3f53c9-2ec6-bab2-73ba-d02fb7da393b_Shape_e6f60158-3410-1508-d64a-40be9701834a , mod:f3320a65-c61a-ae9b-b75e-69d55beba53b_Shape_4fcfb4e2-e439-9c59-3088-5d3c534736a2 , mod:5ef9a1f3-5dc2-ec87-bff0-acc3efcf85cc_Shape_7e8401d6-59e3-3b89-c7fb-e6f0adc2df56 , mod:SequenceFlow_BPMN_Shape_3c9c434f-7da3-4e79-72d4-ca0af43e743d , mod:SequenceFlow_BPMN_Shape_8eda79f2-4c31-7a69-fa7a-6ff16fe19175 , mod:SequenceFlow_BPMN_Shape_10613a69-7868-999f-7685-653df2996871 , mod:SequenceFlow_BPMN_Shape_a07c6636-c7ff-2185-1531-55053b2a99a6 , mod:SequenceFlow_BPMN_Shape_ad052f44-998e-a9f7-514d-52ad40739a4b , mod:SequenceFlow_BPMN_Shape_45587075-b2b1-3676-c782-529b23ae4037 , mod:SequenceFlow_BPMN_Shape_7f1fa0d9-2613-61b1-e5aa-1f51ff659278 .
 
 mod:Model  a             owl:Class ;
         rdfs:label       "Models" ;
@@ -28519,16 +28519,16 @@ mod:Pool_Shape_c5cd0fad-e8af-fc45-e05b-d6655505b750
         mod:shapeInstantiatesPaletteConstruct
                 po:Pool ;
         mod:shapePositionsOnCoordinateX
-                -1290 , -1272 ;
+                -1272 ;
         mod:shapePositionsOnCoordinateY
-                922 , -14 ;
+                658 ;
         mod:shapeVisualisesConceptualElement
                 mod:Pool_17b46d93-95d2-43a2-a9a8-460036fa4929 .
 
 mod:Lane_ffbd3aa6-7b67-4de7-9059-288ef3a95ccb
         a       bpmn:Lane , mod:ConceptualElement ;
         lo:modelingContainerContainsModelingLanguageConstruct
-                mod:Activity_e9a34c3d-9a33-467f-acaa-00bd3bfea6b5 , mod:ExclusiveGateway_4dd2ff5a-979d-48d0-8af2-fbc5f7fa8d01 , mod:SubProcess_7a59e49f-6ad4-478d-92e6-5c340a751d12 , mod:Task_eb667c94-77f3-4742-93ae-cc032812ffaa , mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2 , mod:Task_f1ec8741-ed50-4039-8746-8fe97df45554 , mod:Task_52b6608d-ddaf-4cdc-bcd2-da98054dbf93 , mod:Task_71c9f5e9-7ae2-41f8-8ae6-446b2a1ff729 .
+                mod:Activity_e9a34c3d-9a33-467f-acaa-00bd3bfea6b5 , mod:ExclusiveGateway_4dd2ff5a-979d-48d0-8af2-fbc5f7fa8d01 , mod:SubProcess_7a59e49f-6ad4-478d-92e6-5c340a751d12 , mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2 , mod:Task_f1ec8741-ed50-4039-8746-8fe97df45554 , mod:Task_52b6608d-ddaf-4cdc-bcd2-da98054dbf93 , mod:Task_83dcd9ff-f010-4311-b243-638ee39edffe , mod:Task_71c9f5e9-7ae2-41f8-8ae6-446b2a1ff729 .
 
 mod:Lane_Shape_26d2380f-8a80-03ca-41f3-da1309fa4ada
         a                   mod:Shape ;
@@ -28548,19 +28548,19 @@ mod:Lane_Shape_26d2380f-8a80-03ca-41f3-da1309fa4ada
 mod:Lane_9b5c985f-f6b1-41b3-981f-a6d6d0422635
         a       bpmn:Lane , mod:ConceptualElement ;
         lo:modelingContainerContainsModelingLanguageConstruct
-                mod:StartEvent_d00e621c-98cc-4577-b64f-ee099a68488f , mod:Activity_f576b3bd-6215-435e-9eb4-70fb5b13c7b0 , mod:Task_3021a0d4-d5ca-4032-a3a2-05efab498053 , mod:EndEvent_82efbf2b-efa5-4bbf-84f7-437e9a2c9d62 , mod:Task_71c9f5e9-7ae2-41f8-8ae6-446b2a1ff729 .
+                mod:StartEvent_d00e621c-98cc-4577-b64f-ee099a68488f , mod:Activity_f576b3bd-6215-435e-9eb4-70fb5b13c7b0 , mod:Task_71c9f5e9-7ae2-41f8-8ae6-446b2a1ff729 .
 
 mod:Lane_Shape_d921e049-bc10-5101-1bef-7510caabf0d1
         a                   mod:Shape ;
         rdfs:label          "Lane" ;
-        mod:shapeHasHeight  128 ;
-        mod:shapeHasWidth   2517 ;
+        mod:shapeHasHeight  262 ;
+        mod:shapeHasWidth   2507 ;
         mod:shapeInstantiatesPaletteConstruct
                 po:Lane ;
         mod:shapePositionsOnCoordinateX
                 -1272 ;
         mod:shapePositionsOnCoordinateY
-                959 ;
+                928 ;
         mod:shapeVisualisesConceptualElement
                 mod:Lane_9b5c985f-f6b1-41b3-981f-a6d6d0422635 .
 
@@ -28575,9 +28575,9 @@ mod:StartEvent_Shape_d03c7081-4d0d-8e5e-015e-8cf3d3534512
         mod:shapeInstantiatesPaletteConstruct
                 po:StartEvent ;
         mod:shapePositionsOnCoordinateX
-                -1212 ;
+                -1211 ;
         mod:shapePositionsOnCoordinateY
-                977 ;
+                972 ;
         mod:shapeVisualisesConceptualElement
                 mod:StartEvent_d00e621c-98cc-4577-b64f-ee099a68488f .
 
@@ -28628,43 +28628,6 @@ mod:Activity_Shape_94a5e1f3-ea04-7b58-4ac3-60c33e649a8c
         mod:shapeVisualisesConceptualElement
                 mod:Activity_121479e1-9e90-4aa9-a889-c5491ff4c37c .
 
-mod:Task_eb667c94-77f3-4742-93ae-cc032812ffaa
-        a       bpmn:Task , mod:ConceptualElement .
-
-mod:Task_Shape_390fdb07-a001-ffea-23ec-732820aa0474
-        a                   mod:Shape ;
-        rdfs:label          "has_food_allergies" ;
-        mod:shapeHasHeight  70 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:Task ;
-        mod:shapePositionsOnCoordinateX
-                -465 ;
-        mod:shapePositionsOnCoordinateY
-                875 ;
-        mod:shapeVisualisesConceptualElement
-                mod:Task_eb667c94-77f3-4742-93ae-cc032812ffaa .
-
-mod:SequenceFlow_ae0c699c-e1fe-4312-8c85-c46294ddeb0c
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:ExclusiveGateway_4dd2ff5a-979d-48d0-8af2-fbc5f7fa8d01 ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_eb667c94-77f3-4742-93ae-cc032812ffaa .
-
-mod:SequenceFlow_BPMN_Shape_53bb79f2-de0f-31a8-4106-fdf9eec09374
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                244 ;
-        mod:shapePositionsOnCoordinateY
-                521 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_ae0c699c-e1fe-4312-8c85-c46294ddeb0c .
-
 mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2
         a       bpmn:ExclusiveGateway , mod:ConceptualElement .
 
@@ -28681,26 +28644,6 @@ mod:ExclusiveGateway_Shape_651d93d1-fdf5-d89e-00bd-860e2215581b
                 821 ;
         mod:shapeVisualisesConceptualElement
                 mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2 .
-
-mod:SequenceFlow_b4136dd8-afe1-4777-abe5-90c453e39a5f
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:Task_eb667c94-77f3-4742-93ae-cc032812ffaa ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2 .
-
-mod:SequenceFlow_BPMN_Shape_36f7ccfb-bb35-77a1-97e5-e0d20d4ee346
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                523 ;
-        mod:shapePositionsOnCoordinateY
-                533 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_b4136dd8-afe1-4777-abe5-90c453e39a5f .
 
 mod:SequenceFlow_1bb0fe51-9c66-4aa4-a58a-74a621131a30
         a       bpmn:SequenceFlow , mod:ConceptualElement ;
@@ -28721,43 +28664,6 @@ mod:SequenceFlow_BPMN_Shape_6dce804a-640b-58cc-d621-572705c2cbf9
                 477 ;
         mod:shapeVisualisesConceptualElement
                 mod:SequenceFlow_1bb0fe51-9c66-4aa4-a58a-74a621131a30 .
-
-mod:SequenceFlow_92c58b73-f3f9-41cb-8e3a-16df8bfab91a
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:SubProcess_7a59e49f-6ad4-478d-92e6-5c340a751d12 ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_eb667c94-77f3-4742-93ae-cc032812ffaa .
-
-mod:SequenceFlow_BPMN_Shape_570b0b9f-06ba-d789-a29a-779c781a6ba0
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                374 ;
-        mod:shapePositionsOnCoordinateY
-                492 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_92c58b73-f3f9-41cb-8e3a-16df8bfab91a .
-
-mod:Task_39b23381-7064-463b-97ea-1eea948d2417
-        a       bpmn:Task , mod:ConceptualElement .
-
-mod:Task_Shape_08cb5275-0bb0-9fcb-08dd-a7b6e3e4b4cb
-        a                   mod:Shape ;
-        rdfs:label          "has_calories_preferences" ;
-        mod:shapeHasHeight  70 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:Task ;
-        mod:shapePositionsOnCoordinateX
-                106 ;
-        mod:shapePositionsOnCoordinateY
-                834 ;
-        mod:shapeVisualisesConceptualElement
-                mod:Task_39b23381-7064-463b-97ea-1eea948d2417 .
 
 mod:SubProcess_8117fe83-067c-45e5-8837-874ec817e7ec
         a       bpmn:SubProcess , mod:ConceptualElement .
@@ -28796,47 +28702,6 @@ mod:SequenceFlow_BPMN_Shape_52dbff65-678f-03f2-92e8-6a92785731ed
         mod:shapeVisualisesConceptualElement
                 mod:SequenceFlow_ef1a496f-7522-4db9-98a6-26bf6dda6ddb .
 
-mod:SequenceFlow_7d1e5afc-ba53-4068-b18a-1e882771b625
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2 ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_39b23381-7064-463b-97ea-1eea948d2417 .
-
-mod:SequenceFlow_BPMN_Shape_d6749a0c-6c4d-a1f9-73ce-5048834e0595
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                677 ;
-        mod:shapePositionsOnCoordinateY
-                539 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_7d1e5afc-ba53-4068-b18a-1e882771b625 .
-
-mod:SequenceFlow_b3faf1e4-a9d2-4fef-a7fc-a75ab8075b08
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:SubProcess_8117fe83-067c-45e5-8837-874ec817e7ec ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_39b23381-7064-463b-97ea-1eea948d2417 .
-
-mod:SequenceFlow_BPMN_Shape_a7555ef4-a483-b4e5-917d-8556e49259a9
-        a                   mod:Shape ;
-        rdfs:label          " " ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                703 ;
-        mod:shapePositionsOnCoordinateY
-                482 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_b3faf1e4-a9d2-4fef-a7fc-a75ab8075b08 .
-
 mod:Activity_Shape_9c76a54a-9de6-f4a6-e79d-e85e6dbf9b30
         rdfs:label          "Activity" ;
         mod:shapeHasHeight  70 ;
@@ -28861,9 +28726,9 @@ mod:Task_Shape_247ab942-a4c8-efea-0f38-715ff8b6d96c
         mod:shapeInstantiatesPaletteConstruct
                 po:Task ;
         mod:shapePositionsOnCoordinateX
-                683 ;
+                682 ;
         mod:shapePositionsOnCoordinateY
-                856 ;
+                852 ;
         mod:shapeVisualisesConceptualElement
                 mod:Task_f1ec8741-ed50-4039-8746-8fe97df45554 .
 
@@ -30217,26 +30082,6 @@ kebiOntology:category_seasoning
         <http://www.omilab.org/example#a_Positions>
                 "EDGE 0 index:9" .
 
-mod:SequenceFlow_0d01c638-c1fc-4b46-8905-1a76a97df4bb
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:Task_39b23381-7064-463b-97ea-1eea948d2417 ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:ExclusiveGateway_25c44550-9f93-4a81-8fd0-af62147c9131 .
-
-mod:SequenceFlow_BPMN_Shape_6215d5c5-443b-6809-657d-40c97a4edec3
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                511 ;
-        mod:shapePositionsOnCoordinateY
-                780 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_0d01c638-c1fc-4b46-8905-1a76a97df4bb .
-
 mod:DataStore_8e9c7008-0a2f-40a3-bc5d-a920cd4c9f5c
         a       bpmn:DataStore , mod:ConceptualElement .
 
@@ -30282,9 +30127,9 @@ mod:Task_Shape_62be6f85-f9c8-337c-b169-d2d01a905797
         mod:shapeInstantiatesPaletteConstruct
                 po:Task ;
         mod:shapePositionsOnCoordinateX
-                915 ;
+                914 ;
         mod:shapePositionsOnCoordinateY
-                1036 ;
+                1114 ;
         mod:shapeVisualisesConceptualElement
                 mod:Task_3021a0d4-d5ca-4032-a3a2-05efab498053 .
 
@@ -30301,7 +30146,7 @@ mod:Task_Shape_2c87de68-3e2c-8998-3b5d-beac57bf9f60
         mod:shapePositionsOnCoordinateX
                 930 ;
         mod:shapePositionsOnCoordinateY
-                793 ;
+                789 ;
         mod:shapeVisualisesConceptualElement
                 mod:Task_52b6608d-ddaf-4cdc-bcd2-da98054dbf93 .
 
@@ -30316,9 +30161,9 @@ mod:EndEvent_Shape_32b460c6-1e68-1775-4480-4ac43c047410
         mod:shapeInstantiatesPaletteConstruct
                 po:EndEvent ;
         mod:shapePositionsOnCoordinateX
-                1172 ;
+                1171 ;
         mod:shapePositionsOnCoordinateY
-                994 ;
+                1072 ;
         mod:shapeVisualisesConceptualElement
                 mod:EndEvent_82efbf2b-efa5-4bbf-84f7-437e9a2c9d62 .
 
@@ -30486,9 +30331,9 @@ bpaas:food_category  a   rdfs:Class ;
         rdfs:subClassOf  bpmn:ManualTask .
 
 lo:food_category  a                 owl:ObjectProperty , owl:DatatypeProperty ;
-        rdfs:domain                 bpaas:food_category ;
+        rdfs:domain                 bpaas:food_category , bpaas:Select_food_calories ;
         rdfs:label                  "food_category" ;
-        rdfs:range                  xsd:string , bpaas:food_category ;
+        rdfs:range                  xsd:integer , xsd:string , bpaas:food_category ;
         rdfs:subPropertyOf          lo:elementHasBridgingConcept ;
         mod:propertyIsShownInModel  true .
 
@@ -30531,15 +30376,15 @@ mod:Task_83dcd9ff-f010-4311-b243-638ee39edffe
 
 mod:Task_Shape_a18ca7d6-f1ea-4fde-7e8d-e595657c3b2b
         a                   mod:Shape ;
-        rdfs:label          "Task" ;
+        rdfs:label          "check_customer_preferences" ;
         mod:shapeHasHeight  70 ;
         mod:shapeHasWidth   100 ;
         mod:shapeInstantiatesPaletteConstruct
                 po:Task ;
         mod:shapePositionsOnCoordinateX
-                -822 ;
+                -1115 ;
         mod:shapePositionsOnCoordinateY
-                351 ;
+                802 ;
         mod:shapeVisualisesConceptualElement
                 mod:Task_83dcd9ff-f010-4311-b243-638ee39edffe .
 
@@ -30554,88 +30399,11 @@ mod:Task_Shape_2d132b79-7493-d172-bd67-5f6f77fcfe10
         mod:shapeInstantiatesPaletteConstruct
                 po:Task ;
         mod:shapePositionsOnCoordinateX
-                -1009 ;
+                -1008 ;
         mod:shapePositionsOnCoordinateY
-                985 ;
+                980 ;
         mod:shapeVisualisesConceptualElement
                 mod:Task_71c9f5e9-7ae2-41f8-8ae6-446b2a1ff729 .
-
-mod:Task_b08bd689-0521-4a72-b0b9-cecc7b17c44a
-        a       bpmn:Task , mod:ConceptualElement .
-
-mod:Task_Shape_0c0062af-ed77-b91c-f3c0-9e246308bef1
-        a                   mod:Shape ;
-        rdfs:label          "has_food_category" ;
-        mod:shapeHasHeight  70 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:Task ;
-        mod:shapePositionsOnCoordinateX
-                -915 ;
-        mod:shapePositionsOnCoordinateY
-                802 ;
-        mod:shapeVisualisesConceptualElement
-                mod:Task_b08bd689-0521-4a72-b0b9-cecc7b17c44a .
-
-mod:SequenceFlow_cafb32fc-fa5f-4548-9388-de0a06786d86
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:Task_83dcd9ff-f010-4311-b243-638ee39edffe ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_b08bd689-0521-4a72-b0b9-cecc7b17c44a .
-
-mod:SequenceFlow_BPMN_Shape_2390ecf0-38be-2c79-ec1d-d8f84ca196c5
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                -1027 ;
-        mod:shapePositionsOnCoordinateY
-                777 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_cafb32fc-fa5f-4548-9388-de0a06786d86 .
-
-mod:SequenceFlow_69ee691e-37a9-494e-95cf-e28f7ad1bb82
-        a       bpmn:SequenceFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:Task_b08bd689-0521-4a72-b0b9-cecc7b17c44a ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:ExclusiveGateway_4dd2ff5a-979d-48d0-8af2-fbc5f7fa8d01 .
-
-mod:SequenceFlow_BPMN_Shape_cb0a3d5d-494a-1ce1-a0cf-20bb6a4241b6
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                -855 ;
-        mod:shapePositionsOnCoordinateY
-                786 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_69ee691e-37a9-494e-95cf-e28f7ad1bb82 .
-
-mod:MessageFlow_6f58ebe0-d74d-47d1-915c-21b4cf3bc98f
-        a       bpmn:MessageFlow , mod:ConceptualElement ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:StartEvent_d00e621c-98cc-4577-b64f-ee099a68488f ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_71c9f5e9-7ae2-41f8-8ae6-446b2a1ff729 .
-
-mod:MessageFlow_BPMN_Shape_927d2b4f-8e95-07a2-03d6-0b296df2506f
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:MessageFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                -1166 ;
-        mod:shapePositionsOnCoordinateY
-                1015 ;
-        mod:shapeVisualisesConceptualElement
-                mod:MessageFlow_6f58ebe0-d74d-47d1-915c-21b4cf3bc98f .
 
 mod:SequenceFlow_9f38a75e-d146-4365-b05f-cf09c468c576
         a       bpmn:SequenceFlow , mod:ConceptualElement ;
@@ -30676,3 +30444,313 @@ mod:SequenceFlow_BPMN_Shape_1e9fede7-49ff-4f93-3f7c-7ee6de85f631
                 968 ;
         mod:shapeVisualisesConceptualElement
                 mod:SequenceFlow_e8d1cdfd-421a-4049-9273-b182d38f3975 .
+
+lo:choose_food_category
+        a                           owl:DatatypeProperty ;
+        rdfs:domain                 bpmn:Task , bpmn:ManualTask ;
+        rdfs:label                  "choose_food_category" ;
+        rdfs:range                  xsd:string ;
+        mod:propertyIsShownInModel  false , true .
+
+mod:food_category_e1d22f5b-66be-4d86-b1cf-cdcc1651a187
+        a                        mod:ConceptualElement , bpaas:food_category ;
+        lo:choose_food_category  "" .
+
+mod:f231720a-8220-00ac-45d2-593ec07ca518_Shape_ac8521b5-d96d-4803-8df2-e0c0468c119d
+        a                         mod:Shape ;
+        rdfs:label                "food_category" ;
+        mod:shapeHasHeight        70 ;
+        mod:shapeHasWidth         100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:f231720a-8220-00ac-45d2-593ec07ca518 ;
+        mod:shapePositionsOnCoordinateX
+                -984 ;
+        mod:shapePositionsOnCoordinateY
+                801 ;
+        mod:shapeRepresentsModel  mod:Model_ed7166c3-6776-4ec9-91a5-d7ff62475a92 ;
+        mod:shapeVisualisesConceptualElement
+                mod:food_category_e1d22f5b-66be-4d86-b1cf-cdcc1651a187 .
+
+po:0a3f53c9-2ec6-bab2-73ba-d02fb7da393b
+        a                             po:PaletteElement ;
+        rdfs:label                    "allergies_selection" ;
+        po:paletteConstructHasHeight  70 ;
+        po:paletteConstructHasModelImage
+                "Manual_Task.png" ;
+        po:paletteConstructHasPaletteThumbnail
+                "Manual_Task.png" ;
+        po:paletteConstructHasParentPaletteConstruct
+                po:ManualTask ;
+        po:paletteConstructHasWidth   100 ;
+        po:paletteConstructIsGroupedInPaletteCategory
+                po:Category_Activities4BPMNProcessModelingView ;
+        po:paletteConstructIsHiddenFromPalette
+                false ;
+        po:paletteConstructIsRelatedToModelingLanguageConstruct
+                bpaas:allergies_selection .
+
+bpaas:allergies_selection
+        a                rdfs:Class ;
+        rdfs:comment     "This is a process task to select the food allergies" ;
+        rdfs:label       "allergies_selection" ;
+        rdfs:subClassOf  bpmn:ManualTask .
+
+lo:food_allergies  a                owl:DatatypeProperty ;
+        rdfs:domain                 bpaas:allergies_selection ;
+        rdfs:label                  "food_allergies" ;
+        rdfs:range                  xsd:string ;
+        mod:propertyIsShownInModel  true .
+
+mod:allergies_selection_b3f2256d-1962-459a-9668-c81b93b8867d
+        a                  mod:ConceptualElement , bpaas:allergies_selection ;
+        lo:food_allergies  "" .
+
+mod:0a3f53c9-2ec6-bab2-73ba-d02fb7da393b_Shape_e6f60158-3410-1508-d64a-40be9701834a
+        a                   mod:Shape ;
+        rdfs:label          "allergies_selection" ;
+        mod:shapeHasHeight  70 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:0a3f53c9-2ec6-bab2-73ba-d02fb7da393b ;
+        mod:shapePositionsOnCoordinateX
+                -512 ;
+        mod:shapePositionsOnCoordinateY
+                838 ;
+        mod:shapeVisualisesConceptualElement
+                mod:allergies_selection_b3f2256d-1962-459a-9668-c81b93b8867d .
+
+po:f3320a65-c61a-ae9b-b75e-69d55beba53b
+        a                             po:PaletteElement ;
+        rdfs:label                    "Select_food_calories" ;
+        po:paletteConstructHasHeight  70 ;
+        po:paletteConstructHasModelImage
+                "Manual_Task.png" ;
+        po:paletteConstructHasPaletteThumbnail
+                "Manual_Task.png" ;
+        po:paletteConstructHasParentPaletteConstruct
+                po:ManualTask ;
+        po:paletteConstructHasWidth   100 ;
+        po:paletteConstructIsGroupedInPaletteCategory
+                po:Category_Activities4BPMNProcessModelingView ;
+        po:paletteConstructIsHiddenFromPalette
+                false ;
+        po:paletteConstructIsRelatedToModelingLanguageConstruct
+                bpaas:Select_food_calories .
+
+bpaas:Select_food_calories
+        a                rdfs:Class ;
+        rdfs:comment     "This is a process task to select the food calories" ;
+        rdfs:label       "Select_food_calories" ;
+        rdfs:subClassOf  bpmn:ManualTask .
+
+lo:food_calories  a                 owl:DatatypeProperty ;
+        rdfs:domain                 bpaas:Select_food_calories ;
+        rdfs:label                  "food_calories" ;
+        rdfs:range                  xsd:integer ;
+        mod:propertyIsShownInModel  true .
+
+mod:Select_food_calories_f9e7c1ba-9547-4864-a4f9-dcd698709695
+        a                 mod:ConceptualElement , bpaas:Select_food_calories ;
+        lo:food_calories  2 .
+
+mod:f3320a65-c61a-ae9b-b75e-69d55beba53b_Shape_4fcfb4e2-e439-9c59-3088-5d3c534736a2
+        a                   mod:Shape ;
+        rdfs:label          "Select_food_calories" ;
+        mod:shapeHasHeight  70 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:f3320a65-c61a-ae9b-b75e-69d55beba53b ;
+        mod:shapePositionsOnCoordinateX
+                0 ;
+        mod:shapePositionsOnCoordinateY
+                0 ;
+        mod:shapeVisualisesConceptualElement
+                mod:Select_food_calories_f9e7c1ba-9547-4864-a4f9-dcd698709695 .
+
+po:5ef9a1f3-5dc2-ec87-bff0-acc3efcf85cc
+        a                             po:PaletteElement ;
+        rdfs:label                    "choose_food_calories" ;
+        po:paletteConstructHasHeight  70 ;
+        po:paletteConstructHasModelImage
+                "Manual_Task.png" ;
+        po:paletteConstructHasPaletteThumbnail
+                "Manual_Task.png" ;
+        po:paletteConstructHasParentPaletteConstruct
+                po:ManualTask ;
+        po:paletteConstructHasWidth   100 ;
+        po:paletteConstructIsGroupedInPaletteCategory
+                po:Category_Activities4BPMNProcessModelingView ;
+        po:paletteConstructIsHiddenFromPalette
+                false ;
+        po:paletteConstructIsRelatedToModelingLanguageConstruct
+                bpaas:choose_food_calories .
+
+bpaas:choose_food_calories
+        a                rdfs:Class ;
+        rdfs:comment     "This is a process task to select the food calories" ;
+        rdfs:label       "choose_food_calories" ;
+        rdfs:subClassOf  bpmn:ManualTask .
+
+lo:calories  a                      owl:DatatypeProperty ;
+        rdfs:domain                 bpaas:choose_food_calories ;
+        rdfs:label                  "calories" ;
+        rdfs:range                  xsd:integer ;
+        mod:propertyIsShownInModel  true .
+
+mod:choose_food_calories_997ba144-c848-4c17-878e-ed5a2bec0e2e
+        a            mod:ConceptualElement , bpaas:choose_food_calories ;
+        lo:calories  0 .
+
+mod:5ef9a1f3-5dc2-ec87-bff0-acc3efcf85cc_Shape_7e8401d6-59e3-3b89-c7fb-e6f0adc2df56
+        a                   mod:Shape ;
+        rdfs:label          "choose_food_calories" ;
+        mod:shapeHasHeight  70 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:5ef9a1f3-5dc2-ec87-bff0-acc3efcf85cc ;
+        mod:shapePositionsOnCoordinateX
+                17 ;
+        mod:shapePositionsOnCoordinateY
+                816 ;
+        mod:shapeVisualisesConceptualElement
+                mod:choose_food_calories_997ba144-c848-4c17-878e-ed5a2bec0e2e .
+
+mod:SequenceFlow_a5408366-e0ff-4ccd-a8fb-0ef0cade33a4
+        a       bpmn:SequenceFlow , mod:ConceptualElement ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:Task_83dcd9ff-f010-4311-b243-638ee39edffe ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:food_category_e1d22f5b-66be-4d86-b1cf-cdcc1651a187 .
+
+mod:SequenceFlow_BPMN_Shape_3c9c434f-7da3-4e79-72d4-ca0af43e743d
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                -1097 ;
+        mod:shapePositionsOnCoordinateY
+                666 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_a5408366-e0ff-4ccd-a8fb-0ef0cade33a4 .
+
+mod:SequenceFlow_66f34694-dfa6-45c6-9b40-678e47715d78
+        a       bpmn:SequenceFlow , mod:ConceptualElement ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:food_category_e1d22f5b-66be-4d86-b1cf-cdcc1651a187 ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:ExclusiveGateway_4dd2ff5a-979d-48d0-8af2-fbc5f7fa8d01 .
+
+mod:SequenceFlow_BPMN_Shape_8eda79f2-4c31-7a69-fa7a-6ff16fe19175
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                -944 ;
+        mod:shapePositionsOnCoordinateY
+                702 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_66f34694-dfa6-45c6-9b40-678e47715d78 .
+
+mod:SequenceFlow_e16bdcf8-6c19-496f-ab03-7b258fee22d0
+        a       bpmn:SequenceFlow , mod:ConceptualElement ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:ExclusiveGateway_4dd2ff5a-979d-48d0-8af2-fbc5f7fa8d01 ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:allergies_selection_b3f2256d-1962-459a-9668-c81b93b8867d .
+
+mod:SequenceFlow_BPMN_Shape_10613a69-7868-999f-7685-653df2996871
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                -722 ;
+        mod:shapePositionsOnCoordinateY
+                671 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_e16bdcf8-6c19-496f-ab03-7b258fee22d0 .
+
+mod:SequenceFlow_5f30911d-d6c6-466f-8523-ac18b182f2ff
+        a       bpmn:SequenceFlow , mod:ConceptualElement ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:SubProcess_7a59e49f-6ad4-478d-92e6-5c340a751d12 ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:allergies_selection_b3f2256d-1962-459a-9668-c81b93b8867d .
+
+mod:SequenceFlow_BPMN_Shape_a07c6636-c7ff-2185-1531-55053b2a99a6
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                -622 ;
+        mod:shapePositionsOnCoordinateY
+                646 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_5f30911d-d6c6-466f-8523-ac18b182f2ff .
+
+mod:SequenceFlow_c8cb11e5-812b-40e9-ac5b-33ce77952cfd
+        a       bpmn:SequenceFlow , mod:ConceptualElement ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:allergies_selection_b3f2256d-1962-459a-9668-c81b93b8867d ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2 .
+
+mod:SequenceFlow_BPMN_Shape_ad052f44-998e-a9f7-514d-52ad40739a4b
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                -510 ;
+        mod:shapePositionsOnCoordinateY
+                690 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_c8cb11e5-812b-40e9-ac5b-33ce77952cfd .
+
+mod:SequenceFlow_615ca57a-f50a-41f6-ba25-b895aece3fd0
+        a       bpmn:SequenceFlow , mod:ConceptualElement ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:SubProcess_8117fe83-067c-45e5-8837-874ec817e7ec ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:choose_food_calories_997ba144-c848-4c17-878e-ed5a2bec0e2e .
+
+mod:SequenceFlow_BPMN_Shape_45587075-b2b1-3676-c782-529b23ae4037
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                -101 ;
+        mod:shapePositionsOnCoordinateY
+                662 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_615ca57a-f50a-41f6-ba25-b895aece3fd0 .
+
+mod:SequenceFlow_cc62895f-2507-4823-8c9c-788dcc753cb2
+        a       bpmn:SequenceFlow , mod:ConceptualElement ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:ExclusiveGateway_648d970f-3876-4e66-9919-47415b1aa6c2 ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:choose_food_calories_997ba144-c848-4c17-878e-ed5a2bec0e2e .
+
+mod:SequenceFlow_BPMN_Shape_7f1fa0d9-2613-61b1-e5aa-1f51ff659278
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                -342 ;
+        mod:shapePositionsOnCoordinateY
+                664 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_cc62895f-2507-4823-8c9c-788dcc753cb2 .
